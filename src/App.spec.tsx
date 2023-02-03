@@ -1,16 +1,16 @@
-import { render, screen } from "@testing-library/react";
-import App from "./App";
+import { render, screen } from '@testing-library/react'
+import App from './App'
 
-describe("render App", () => {
-  it("should render", () => {
-    expect(1).toBe(1);
-  });
+describe('render App', () => {
+  it('should render', () => {
+    expect(1).toBe(1)
+  })
 
-  it("should display elements", () => {
-    render(<App />);
+  it('should display elements', () => {
+    render(<App />)
 
     expect(
-      screen.getByRole("heading", { name: /vite \+ react/i })
-    ).toBeInTheDocument();
-  });
-});
+      screen.getByRole('heading', { name: /vite \+ react/i }),
+    ).toBeInTheDocument()
+  })
+})
