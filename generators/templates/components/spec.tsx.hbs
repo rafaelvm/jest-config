@@ -1,0 +1,8 @@
+import { render } from '@testing-library/react'
+import {{pascalCase name}} from './{{pascalCase name}}.component'
+
+test('should render correctly', () => {
+  const { container } = render(<{{pascalCase name}} />)
+
+  expect(container.firstChild).toMatchSnapshot()
+})
